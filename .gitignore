@@ -1,0 +1,21 @@
+# Distribution / packaging
+build/
+/dist/
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+
+
+# Sphinx documentation
+docs/_build/
+
+# Panel
+node_modules
+
+.vscode/*
+.DS_Store
