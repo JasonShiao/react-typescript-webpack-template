@@ -2,7 +2,8 @@ import path from "path";
 import { Configuration } from "webpack";
 import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin';
 
-const config: Configuration = {
+//const config: Configuration = {
+const config = {
   entry: "./src/index.tsx",
   module: {
     rules: [
