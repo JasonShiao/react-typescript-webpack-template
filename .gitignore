@@ -1,6 +1,6 @@
 # Distribution / packaging
 build/
-/dist/
+dist/
 
 # Unit test / coverage reports
 htmlcov/
