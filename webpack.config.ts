@@ -1,6 +1,7 @@
 import path from "path";
 import { Configuration } from "webpack";
 import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 //const config: Configuration = {
 const config = {
@@ -28,7 +29,7 @@ const config = {
   },
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "bundle.js",
+    filename: "[name].bundle.js",
   },
   devServer: {
     static: path.join(__dirname, "dist"),
@@ -41,6 +42,11 @@ const config = {
       eslint: {
         files: "./src/**/*",
       },
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'index.html',
+      template: 'html/index-template.html',
+      //chunks: ['main']
     }),
   ],
 };
