@@ -1,7 +1,7 @@
 {
-  "name": "beambox-panel",
+  "name": "react-typescript-webpack-template",
   "version": "1.0.0",
-  "description": "touch panel web pages for controlling FLUX's beambox laser engraver",
+  "description": "A template for creating a project using react, typescript and webpack ",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
