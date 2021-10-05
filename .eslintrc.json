@@ -37,6 +37,13 @@
     "react": {
       "pragma": "React",
       "version": "detect"
+    },
+    "import/resolver": {
+      "alias": {
+        "map": [
+          ["Images", "./asset/images"]
+        ]
+      }
     }
   }
 }

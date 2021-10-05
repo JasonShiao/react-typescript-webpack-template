@@ -12,6 +12,10 @@ const config = {
   module: {
     rules: [
       {
+        test: /\.(png|jpg|svg)/,
+        type: 'asset/resource',
+      },
+      {
         test: /\.s[ac]ss$/i,
         exclude: /node_modules/,
         include: /scss/,
@@ -46,6 +50,9 @@ const config = {
     ],
   },
   resolve: {
+    alias: {
+      Images: path.resolve(__dirname, 'asset/images/'),
+    },
     extensions: [".tsx", ".ts", ".js", ".scss"],
   },
   output: {
