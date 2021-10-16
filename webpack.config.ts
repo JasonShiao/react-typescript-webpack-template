@@ -64,6 +64,11 @@ const config = {
     compress: true,
     port: 4000,
   },
+  optimization: {
+    splitChunks: {
+      chunks: "all",
+    },
+  },
   plugins: [
     new ForkTsCheckerWebpackPlugin({
       async: false,
