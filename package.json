@@ -9,8 +9,8 @@
     "build": "webpack --mode production",
     "dev": "webpack --mode development"
   },
-  "author": "FLUX Inc.",
-  "license": "ISC",
+  "author": "Jason Shiao.",
+  "license": "MIT",
   "dependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
