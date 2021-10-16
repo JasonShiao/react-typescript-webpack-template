@@ -66,9 +66,16 @@ const config = {
     port: 4000,
   },
   optimization: {
+    runtimeChunk: 'single',
     splitChunks: {
-      chunks: "all",
-    },
+      cacheGroups: {
+        vendor: {
+          test: /[\\/]node_modules[\\/]/,
+          name: 'vendors',
+          chunks: 'all'
+        }
+      }
+    }
   },
   plugins: [
     new ForkTsCheckerWebpackPlugin({
